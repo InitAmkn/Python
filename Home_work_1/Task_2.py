@@ -50,8 +50,26 @@ def verification_of_approval_all_value(x, y, z):
         i += 1
 
 
-x = [0, 1, 0, 1, 0, 1, 0, 1]
-y = [0, 0, 1, 1, 0, 0, 1, 1]
-z = [0, 0, 0, 0, 1, 1, 1, 1]
+#x = [0, 1, 0, 1, 0, 1, 0, 1]
+#y = [0, 0, 1, 1, 0, 0, 1, 1]
+#z = [0, 0, 0, 0, 1, 1, 1, 1]
+x = []
+y = []
+z = []
+
+for i in range(0, 8):
+    try:
+        x.append(int(bin(i)[-1]))
+    except:
+        y.append(0)
+    try:
+        y.append(int(bin(i)[-2]))
+    except:
+        y.append(0)
+    try:
+        z.append(int(bin(i)[-3]))
+    except:
+        z.append(0)
+
 
 verification_of_approval_all_value(x, y, z)
