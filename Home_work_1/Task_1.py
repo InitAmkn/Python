@@ -10,9 +10,9 @@
 
 
 def is_weekends(day):
-    if day > 0 or day <= 5:
+    if day > 0 and day <= 5:
         return "нет"
-    elif day > 5 or day <= 7:
+    elif day > 5 and day <= 7:
         return "да"
     else:
         return "некорректный ввод"
