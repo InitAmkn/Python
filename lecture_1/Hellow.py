@@ -14,3 +14,6 @@ print(f)
 
 list = [1, 3, 5]
 print(list)
+
+str_ = "fdsf,sdf,sd,dfsfref,re,f"
+print(str_.split(','))

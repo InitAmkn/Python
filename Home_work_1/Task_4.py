@@ -13,7 +13,7 @@ def distance_points(A, B):
     return round(((A[0] - B[0]) ** 2 + (A[1] - B[1]) ** 2) ** 0.5, 3)
 
 
-A = [7, -5]
-B = [1, -1]
+A = [3, 6]
+B = [2, 1]
 
 print(distance_points(A, B))
