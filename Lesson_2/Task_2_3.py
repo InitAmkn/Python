@@ -9,11 +9,11 @@
 a = "ababa"
 b = "aba"
 
+
 def f(a, b):
     count = 0
-    for i in range(len(a) - len(b)):
+    for i in range(len(a) - len(b)+1):
         print('->>', a[i:i + len(b)])
         if b == a[i:i + len(b)]:
             count += 1
     return count
-
