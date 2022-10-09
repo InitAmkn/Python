@@ -11,11 +11,13 @@
 
 
 def conversion_to_binary(number):
-    number_output = ""
+    number_output = []
+    output_str = ''
     while (number > 0):
-        number_output = f"{number % 2}" + number_output
+        number_output.append(number % 2)
         number = number // 2
+        number_output.reverse()
     return number_output
 
 
-print(conversion_to_binary(45))
+print(conversion_to_binary(14))

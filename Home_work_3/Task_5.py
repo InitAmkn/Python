@@ -11,13 +11,13 @@
 
 def Negafibonacci_Numbers(n):
     fibonacci_lst = []
-
     for i in range(0, n+1):
-        Fn = round((((1 + 5**0.5)/2)**i - ((1 - 5**0.5)/2)**i)/5**0.5)
+        Fn = round((((1 + 5 ** 0.5) / 2) ** i -
+                   ((1 - 5 ** 0.5) / 2) ** i) / 5 ** 0.5)
         fibonacci_lst.append(Fn)
         if i != 0:
-            fibonacci_lst.insert(0, Fn*((-1)**(i+1)))
+            fibonacci_lst.insert(0, Fn*((-1) ** (i + 1)))
     return fibonacci_lst
 
 
-print(Negafibonacci_Numbers(10))
+print(Negafibonacci_Numbers(14))

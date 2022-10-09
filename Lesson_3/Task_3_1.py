@@ -11,10 +11,6 @@
 '''
 
 
-
-from itertools import count
-
-
 def find_2(lst, temp):
     count = 0
     for i in range(len(lst)):
@@ -27,5 +23,5 @@ def find_2(lst, temp):
 
 
 lst = ["qwe", "asd", "zxc", "qwe", "ertqwe"]
-temp = "asd"
+temp = "qwe"
 print(find_2(lst, temp))
