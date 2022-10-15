@@ -28,9 +28,9 @@ def sum_numbers_with_odd_indexes(lst):
 
 #lst = generation_random_lst(6)
 
+n = randint(4, 9)
 
 # стало
-n = 6
 lst = [randint(0, 9) for i in range(n)]
 sum = sum([lst[i] for i in range(len(lst)) if i % 2 != 0])
 

@@ -25,7 +25,7 @@ n = int(input("Введите число: "))
 print(not_factorial(n))
 
 # стало
-lst_ = [i for i in range(1, n+1)]
-lst = list(map(lambda x: math.prod(lst_[:x]), lst_))
+lst_temp = [i for i in range(1, n+1)]
+lst = list(map(lambda x: math.prod(lst_temp[:x]), lst_temp))
 
 print(lst)

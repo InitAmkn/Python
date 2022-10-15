@@ -34,15 +34,12 @@ def multiply_first_and_last_numbers(lst):
 # стало
 
 def multiply_first_and_last_numbers_corrected(lst):
-    k = 0
-    if len(lst) % 2 != 0:
-        k = 1
-    multiply_first_and_last = [lst[i] * lst[-1-i]
-                               for i in range(len(lst)//2+k)]
-    return multiply_first_and_last
+    k = 1 if len(lst) % 2 != 0 else 0
+    multiply = [lst[i] * lst[-1-i] for i in range(len(lst)//2+k)]
+    return multiply
 
 
-n = 7
+n = randint(4, 9)
 lst = [randint(0, 9) for i in range(n)]
 
 
