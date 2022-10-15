@@ -25,4 +25,19 @@ def list_non_repeatable(lst):
     return out_lst
 
 
+def list_non_repeatable(lst):
+    out_lst = []
+    for i in range(len(lst)):
+        count = 0
+        for j in range(i+1, len(lst)):
+            if lst[i] == lst[j]:
+                count += 1
+        for j in range(0, i):
+            if lst[i] == lst[j]:
+                count += 1
+        if count < 1:
+            out_lst.append(lst[i])
+    return out_lst
+
+
 print(list_non_repeatable(lst))
