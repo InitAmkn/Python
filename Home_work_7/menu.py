@@ -1,4 +1,9 @@
-
+import add
+import show
+import find
+import export
+import import_file
+import delete
 
 menu = [('1', 'Просмотр записей'),
         ('2', 'Добавление записи'),
@@ -20,7 +25,25 @@ def print_menu():
     print()
 
 
-def user_selection(choice):
-    for i in range(len(menu)):
-        if choice == menu[i][0]:
-            return choice
+def launch():
+    while (True):
+        print_menu()
+        n = input("Выберите № действия: ")
+        if n == "1":
+            show.all_empty()
+        elif n == "2":
+            add.new_empty()
+        elif n == "3":
+            export.format_1("Home_work_7/export")
+            export.format_2("Home_work_7/export")
+        elif n == "4":
+            import_file.format_1("Home_work_7/import")
+            import_file.format_2("Home_work_7/import")
+        elif n == "5":
+            find.empty()
+        elif n == "6":
+            delete.empty()
+        elif n == "7":
+            break
+        else:
+            print("Некорректный ввод")
