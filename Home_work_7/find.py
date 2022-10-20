@@ -3,7 +3,7 @@ import show
 
 
 def empty():
-    something_str = input("Поиск: ")
+    something_str = input("Введите данные: ")
     with open("Home_work_7/Telephone directory.txt", "r", encoding="UTF-8") as data_file:
         persons = list(data_file.readlines())
 
