@@ -2,7 +2,7 @@ import telebot.types
 from telebot import TeleBot
  
  
-bot = TeleBot('5472063097:AAF-3Y2QeK9OnkiQECdUdUxDC99mRzgU1q8')
+bot = TeleBot('')
  
  
 def summator(text):

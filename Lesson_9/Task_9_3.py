@@ -5,7 +5,7 @@ import telebot.types
 from telebot import TeleBot
 
 
-bot = TeleBot('5415154699:AAGcZYgW1xfwKtVybAL-pLBBIusLophuzwU')
+bot = TeleBot('')
 
 
 
