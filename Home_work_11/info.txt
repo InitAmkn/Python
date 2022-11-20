@@ -1,0 +1,4 @@
+python -m venv e
+e\scripts\activate
+python -m pip install notebook sympy matplotlib
+jupyter notebook
